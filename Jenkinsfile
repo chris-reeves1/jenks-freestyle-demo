@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("make directory"){
             steps{
-                sh "mkdir ~/jenkins-demo"
+                sh "mkdir ~/jenkins-demo || true"
             }
         }
         stage("add files"){
